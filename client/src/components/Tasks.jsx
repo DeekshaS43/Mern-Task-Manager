@@ -28,8 +28,8 @@ const Tasks = () => {
 
 
   return (
-    <>
-    <div className="bg-purple-100 min-h-screen">
+   <>
+    <div className="bg-pink-50 min-h-screen">
       <div className="my-2 mx-20 max-w-screen-xl py-4">
 
         {tasks.length !== 0 && <h2 className='my-2 ml-2 md:ml-0 text-xl'><b>Your tasks</b> ({tasks.length})</h2>}
@@ -38,11 +38,11 @@ const Tasks = () => {
         ) : (
           <div>
             {tasks.length === 0 ? (
-
-<div class='w-full md:w-[600px] h-[300px] flex flex-col md:flex-row items-center justify-center md:justify-between gap-4'>
-<span class="text-center md:text-left">No tasks found</span>
-<a href="/tasks/add" class="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md px-4 py-2 md:self-end">Add task</a>
-</div>
+                  
+                  <div className="w-full md:w-[600px] max-h-[300px] h-screen flex flex-col items-center justify-center gap-4 p-4 bg-pink-200 rounded-md shadow-lg mx-auto mt-[calc(40vh-150px)] absolute left-1/2 transform -translate-x-1/2">
+                  <span className="text-center text-gray-800 font-semibold text-xl">Task not found</span>
+                  <a href="/tasks/add" className="bg-gray-400 text-white hover:bg-gray-600 font-medium rounded-md px-4 py-2">Add task</a>
+                </div>
 
             ) : (
               tasks.map((task, index) => (

@@ -47,8 +47,8 @@ const SignupForm = () => {
 
   return (
     <>
-      <div className="bg-purple-50 min-h-screen flex justify-center items-center">
-      <form className='m-auto my-16 max-w-[500px] p-8 bg-white border-2 shadow-md rounded-md'>
+      <div className="bg-pink-50 min-h-screen flex justify-center items-center">
+      <form className='m-auto my-16 max-w-[500px] p-8 bg-pink-200 border-2 shadow-md rounded-md'>
         {loading ? (
           <Loader />
         ) : (
@@ -72,11 +72,11 @@ const SignupForm = () => {
               {fieldError("password")}
             </div>
 
-            <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+            <button className="shadow bg-gray-400 hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                   onClick={handleSubmit}>Submit</button>
 
             <div className='pt-4'>
-              <Link to="/login" className='text-blue-400'>Already have an account? Login here</Link>
+              <Link to="/login" className='text-gray-700'>Already have an account? Login </Link>
             </div>
 
           </>

@@ -18,11 +18,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='flex justify-between sticky top-0 p-4 bg-gray-800 shadow-sm items-center'>
+      <header className='flex justify-between sticky top-0 p-4 bg-pink-400 shadow-sm items-center'>
         <h1 className='text-white cursor-pointer uppercase font-medium'>
           <Link style={{fontFamily:"sans-serif",fontSize:"1.5rem"}} to="/"> Task Manager </Link>
-          <p style={{fontFamily:"cursive",fontSize:"11px"}}  class=" mx-2 text-white no-underline ...">Create | Read | Update | <c className="line-through">Delete</c></p>
-        
+          <p style={{fontFamily:"cursive",fontSize:"14px"}}  class=" mx-2 text-white no-underline ...">Achieve More EveryDay!</p>
+
         </h1>
         
         
@@ -31,13 +31,13 @@ const Navbar = () => {
         <ul className='hidden md:flex gap-4 uppercase font-medium'>
           {authState.isLoggedIn ? (
             <>
-              <li className="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md">
+              <li className="bg-gray-400 text-white hover:bg-gray-600 font-medium rounded-md">
                 <Link to='/tasks/add' className='block w-full h-full px-4 py-2'> <i className="fa-solid fa-plus"></i> Add task </Link>
               </li>
-              <li className='shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded' onClick={handleLogoutClick}>Logout</li>
+              <li className='shadow bg-gray-400 hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded' onClick={handleLogoutClick}>Logout</li>
             </>
           ) : (
-            <li className='shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'><Link to="/login">Login</Link></li>
+            <li className='shadow bg-gray-400 hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'><Link to="/login">Login</Link></li>
           )}
         </ul>
         <span className='md:hidden cursor-pointer text-white' onClick={toggleNavbar}><i className="fa-solid fa-bars"></i></span>
