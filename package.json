@@ -1,0 +1,26 @@
+{
+  "name": "mern-task-manager",
+  "version": "1.0.0",
+  "description": "Assignment: A mern task manager app with crud application",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "npm run dev --prefix server",
+    "dev-client": "npm start --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm install --prefix server",
+    "build": "npm install --prefix client && npm run build --prefix client && npm install --prefix server",
+    "start": "cd backend && node app.js"
+  },
+  "keywords": [
+    "Mern Task Manager"
+  ],
+  "author": "Deeksha Sachan",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.2.1"
+  }
+}
