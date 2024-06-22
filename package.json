@@ -13,7 +13,7 @@
     "start": "cd backend && node app.js"
   },
   "keywords": [
-    "Mern Task Manager"
+    "Mern Task Manager App"
   ],
   "author": "Deeksha Sachan",
   "license": "ISC",
