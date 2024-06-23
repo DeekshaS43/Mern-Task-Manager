@@ -86,9 +86,9 @@ const Task = () => {
 
   return (
     <>
-     <div className="bg-purple-200 min-h-screen">
+     <div className="bg-pink-50 min-h-screen">
       <MainLayout>
-        <form className='m-auto my-16 max-w-[1000px] bg-purple-200 p-8 border-2 shadow-md rounded-md'>
+        <form className='m-auto my-16 max-w-[1000px] bg-pink-200 p-8 border-2 shadow-md rounded-md'>
           {loading ? (
             <Loader />
           ) : (
@@ -100,9 +100,9 @@ const Task = () => {
                 {fieldError("description")}
               </div>
 
-              <button style={{borderRadius:"10px"}}className='bg-purple-500 text-white  px-4 py-2 font-medium hover:bg-primary-dark' onClick={handleSubmit}>{mode === "add" ? "Add task" : "Update Task"}</button>
-              <button style={{float:"right",borderRadius:"10px"}} className=' bg-red-500 text-white px-4 py-2 font-medium' onClick={() => navigate("/")}>Cancel</button>
-              {mode === "update" && <button style={{borderRadius:"10px"}} className='ml-4 bg-blue-500 text-white px-4 py-2 font-medium hover:bg-blue-600' onClick={handleReset}>Reset</button>}
+              <button style={{borderRadius:"10px"}}className='bg-gray-400 text-white  px-4 py-2 font-medium hover:bg-gray-600' onClick={handleSubmit}>{mode === "add" ? "Add task" : "Update Task"}</button>
+              <button style={{float:"right",borderRadius:"10px"}} className=' bg-gray-400 text-white px-4 py-2 font-medium hover:bg-gray-600' onClick={() => navigate("/")}>Cancel</button>
+              {mode === "update" && <button style={{borderRadius:"10px"}} className='ml-4 bg-gray-400 text-white px-4 py-2 font-medium hover:bg-gray-600' onClick={handleReset}>Reset</button>}
             </>
           )}
         </form>

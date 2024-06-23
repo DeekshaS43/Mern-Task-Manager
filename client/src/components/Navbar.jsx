@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <header className='flex justify-between sticky top-0 p-4 bg-pink-400 shadow-sm items-center'>
         <h1 className='text-white cursor-pointer uppercase font-medium'>
-          <Link style={{fontFamily:"sans-serif",fontSize:"1.5rem"}} to="/"> Task Manager </Link>
+          <Link style={{fontFamily:"sans-serif",fontSize:"1.5rem"}} to="/"> Task Manager Webapp</Link>
           <p style={{fontFamily:"cursive",fontSize:"14px"}}  class=" mx-2 text-white no-underline ...">Achieve More EveryDay!</p>
 
         </h1>
@@ -51,13 +51,13 @@ const Navbar = () => {
           <ul className='flex flex-col gap-4 uppercase font-medium text-center'>
             {authState.isLoggedIn ? (
               <>
-                <li className="bg-blue-500 text-white hover:bg-blue-600 font-medium transition py-2 px-3">
+                <li className="bg-gray-400 text-white hover:bg-pink-600 font-medium transition py-2 px-3">
                   <Link to='/tasks/add' className='block w-full h-full'> <i className="fa-solid fa-plus"></i> Add task </Link>
                 </li>
                 <li className='py-2 px-3 cursor-pointer hover:bg-white-200 transition rounded-sm' onClick={handleLogoutClick}>Logout</li>
               </>
             ) : (
-              <li className='shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'><Link to="/login">Login</Link></li>
+              <li className='shadow bg-gray-500 hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'><Link to="/login">Login</Link></li>
               )}
           </ul>
         </div>

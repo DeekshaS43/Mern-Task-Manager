@@ -49,8 +49,8 @@ const Home = () => {
         ) : (
           <>
             <h1 className="text-lg mt-8 mx-8 border-b border-b-gray-300">
-              Hello, <b>{authState.user.name} </b>{" "}
-              <i className="fa-solid fa-hand"></i>
+            <b>Hi, {authState.user.name} !</b>{" "}
+            
             </h1>
 
             <Tasks />
